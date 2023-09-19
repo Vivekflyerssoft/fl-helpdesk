@@ -49,8 +49,8 @@ const Dropdown = () => {
                 ))}
               </select>
             </div>
-            <div className="discription">
-              <label>Discription</label>
+            <div className="description">
+              <label>Description</label>
               <textarea className="text-box"></textarea>
             </div>
             <div className="buttons">

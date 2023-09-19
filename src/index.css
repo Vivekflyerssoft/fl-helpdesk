@@ -12,7 +12,6 @@
 .profile-color {
   display: flex;
   background-color: white;
-  /* border: 1px solid; */
   border-radius: 30px;
   height: 500px;
   flex-direction: column;
@@ -60,10 +59,9 @@
   height: 45px;
   align-items: center;
 }
-.discription {
+.description {
   display: flex;
   width: 345px;
-
   gap: 90px;
   justify-content: center;
 }
