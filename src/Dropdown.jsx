@@ -1,17 +1,11 @@
 import { useState } from "react";
-// import MyButton from "./MyButton";
 const Dropdown = () => {
-  const [selectedOption, setSelectedOption] = useState({ EmployeeId: "" });
-  const id = ["001", "002", "003", "004", "005"];
+  const [setSelectedOption] = useState({ EmployeeId: "" });
+  const idData = ["001", "002", "003", "004", "005"];
   const deparment = ["frondend", "backend", "QA", "degitalmarketing", "sales"];
-  const Category = ["Hadware", "Software", "Mouse", "keyborad", "headset"];
+  const categoryData = ["Hadware", "Software", "Mouse", "keyborad", "headset"];
 
-  const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
-    // setSelectedOption(selectedOption);
-  };
-
-  const handleClick = (e) => {
+  const handleClick = () => {
     alert("success");
     setSelectedOption(" ");
   };
@@ -25,8 +19,8 @@ const Dropdown = () => {
             <div className="employee-id">
               <label>Employee ID </label>
               <select className="dropdown">
-                <option value=""></option>
-                {id.map((id, index) => (
+                <option></option>
+                {idData.map((id, index) => (
                   <option key={index} value={id}>
                     {id}
                   </option>
@@ -36,10 +30,10 @@ const Dropdown = () => {
             <div className="department">
               <label>Department </label>
               <select className="dropdown">
-                <option value=""></option>
-                {deparment.map((deparment, index) => (
-                  <option key={index} value={deparment}>
-                    {deparment}
+                <option></option>
+                {deparment.map((designation, index) => (
+                  <option key={index} value={designation}>
+                    {designation}
                   </option>
                 ))}
               </select>
@@ -47,8 +41,8 @@ const Dropdown = () => {
             <div className="category">
               <label>Category </label>
               <select className="dropdown">
-                <option value=""></option>
-                {Category.map((Category, index) => (
+                <option></option>
+                {categoryData.map((Category, index) => (
                   <option key={index} value={Category}>
                     {Category}
                   </option>
