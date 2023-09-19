@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("./font/Inter-Regular.ttf");
+}
+
+#root {
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  font-family: "Inter-Regular";
+}
+.profile-color {
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  background-color: #0000001c;
+  height: 687px;
+  justify-content: center;
+}
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+}
+.employee-id {
+  display: flex;
+  width: 345px;
+  gap: 80px;
+  justify-content: center;
+}
+.dropdown {
+  width: 107px;
+}
+.department {
+  display: flex;
+  width: 345px;
+  gap: 82px;
+  justify-content: center;
+  height: 45px;
+  align-items: center;
+}
+.category {
+  display: flex;
+  width: 345px;
+  gap: 99px;
+  justify-content: center;
+  height: 45px;
+  align-items: center;
+}
+.description {
+  display: flex;
+  width: 345px;
+  gap: 90px;
+  justify-content: center;
+}
+.buttons {
+  display: flex;
+  width: 345px;
+
+  gap: 80px;
+  justify-content: center;
+  height: 45px;
+  align-items: center;
+}
+.text-box {
+  height: 67px;
+  width: 107px;
+
+  border-radius: 10px;
+}
+.cancel-button {
+  width: 56px;
+  height: 14px;
+  font-size: 9px;
+}
+.submit-button {
+  width: 56px;
+  height: 14px;
+  font-size: 9px;
+}
+.cancel-b {
+  width: 56px;
+  height: 14px;
+  font-size: 9px;
+  background-color: #df6161f0;
+  color: aliceblue;
+  border-radius: 8px;
+}
+.submit-b {
+  width: 56px;
+  height: 14px;
+  font-size: 9px;
+  background-color: #5e78d4f0;
+  border-radius: 8px;
+  color: aliceblue;
+}
