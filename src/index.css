@@ -68,7 +68,6 @@
 .buttons {
   display: flex;
   width: 345px;
-
   gap: 80px;
   justify-content: center;
   height: 45px;
@@ -77,7 +76,6 @@
 .text-box {
   height: 67px;
   width: 107px;
-
   border-radius: 10px;
 }
 .cancel-button {
@@ -91,18 +89,20 @@
   font-size: 9px;
 }
 .cancel-b {
-  width: 56px;
-  height: 14px;
+  width: 75px;
+  height: 25px;
   font-size: 9px;
   background-color: #df6161f0;
   color: aliceblue;
   border-radius: 8px;
+  border: none;
 }
 .submit-b {
-  width: 56px;
-  height: 14px;
+  width: 75px;
+  height: 25px;
   font-size: 9px;
   background-color: #5e78d4f0;
-  border-radius: 8px;
   color: aliceblue;
+  border-radius: 8px;
+  border: none;
 }

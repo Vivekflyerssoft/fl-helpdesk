@@ -1,13 +1,41 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
 const Dropdown = () => {
-  const [setSelectedOption] = useState({ EmployeeId: "" });
+  // const [SelectedOption, setSelectedOption] = useState({ EmployeeId: "" });
   const idData = ["001", "002", "003", "004", "005"];
+  const [responseData, setResponseData] = useState([]);
   const deparment = ["frondend", "backend", "QA", "degitalmarketing", "sales"];
+  const [responsDeparment, setresponsDeparment] = useState([]);
   const categoryData = ["Hadware", "Software", "Mouse", "keyborad", "headset"];
+  const [responsCategory, setresponsCategory] = useState([]);
+
+  useEffect(() => {
+    console.log("inside useEffect");
+    setResponseData(idData);
+  }, []);
+
+  // useEffect(() => {
+  //   alert("Good");
+  //   setResponseData();
+  // }, []);
+
+  useEffect(() => {
+    console.log("inside useEffect");
+    setresponsDeparment(deparment);
+  }, []);
+
+  useEffect(() => {
+    console.log("inside useEffect");
+    setresponsCategory(categoryData);
+  }, []);
 
   const handleClick = () => {
     alert("success");
-    setSelectedOption(" ");
+    setResponseData(" ");
+  };
+  const Click = () => {
+    alert("Request Cancel");
+    setresponsDeparment(" ");
   };
 
   return (
@@ -20,7 +48,7 @@ const Dropdown = () => {
               <label>Employee ID </label>
               <select className="dropdown">
                 <option></option>
-                {idData.map((id, index) => (
+                {responseData.map((id, index) => (
                   <option key={index} value={id}>
                     {id}
                   </option>
@@ -31,7 +59,7 @@ const Dropdown = () => {
               <label>Department </label>
               <select className="dropdown">
                 <option></option>
-                {deparment.map((designation, index) => (
+                {responsDeparment.map((designation, index) => (
                   <option key={index} value={designation}>
                     {designation}
                   </option>
@@ -42,7 +70,7 @@ const Dropdown = () => {
               <label>Category </label>
               <select className="dropdown">
                 <option></option>
-                {categoryData.map((Category, index) => (
+                {responsCategory.map((Category, index) => (
                   <option key={index} value={Category}>
                     {Category}
                   </option>
@@ -55,7 +83,7 @@ const Dropdown = () => {
             </div>
             <div className="buttons">
               <div className="cancel-button">
-                <button className="cancel-b" onClick={handleClick}>
+                <button className="cancel-b" onClick={Click}>
                   Cancel
                 </button>
               </div>
